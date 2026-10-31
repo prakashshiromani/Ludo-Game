@@ -4,8 +4,9 @@
   "description": "Ludo Game Web Edition — Real-time Multiplayer & AI Game",
   "scripts": {
     "postinstall": "npm --prefix client install && npm --prefix server install",
-    "build": "npm --prefix client run build",
+    "build": "npm --prefix client install && npm --prefix server install && npm --prefix client run build",
     "build:all": "npm --prefix client install && npm --prefix server install && npm --prefix client run build",
+    "build:": "npm --prefix client install && npm --prefix server install && npm --prefix client run build",
     "start": "node server/index.js",
     "server": "node server/index.js",
     "client": "npm --prefix client run dev"
