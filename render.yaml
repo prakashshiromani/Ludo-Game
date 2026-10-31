@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ludo-game
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm run build:all
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
