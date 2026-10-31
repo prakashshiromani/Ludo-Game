@@ -1,0 +1,16 @@
+{
+  "name": "ludo-game-web",
+  "version": "1.0.0",
+  "description": "Ludo Game Web Edition — Real-time Multiplayer & AI Game",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "build:all": "npm --prefix client run build"
+  },
+  "keywords": ["ludo", "ludo-king", "socket.io", "react", "vite", "web-game"],
+  "author": "",
+  "license": "MIT"
+}
+
