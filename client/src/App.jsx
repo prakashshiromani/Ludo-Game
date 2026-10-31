@@ -163,7 +163,9 @@ export default function App() {
 
   // Socket.io Setup on Mount
   useEffect(() => {
-    const socketUrl = window.location.hostname === 'localhost' ? 'http://localhost:3001' : '/';
+    const socketUrl =
+      import.meta.env.VITE_BACKEND_URL ||
+      (window.location.hostname === 'localhost' ? 'http://localhost:3001' : '/');
     const s = io(socketUrl, { autoConnect: false });
     setSocket(s);
 
